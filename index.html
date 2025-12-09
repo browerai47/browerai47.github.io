@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Navigation</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2c3e50; /* A dark background */
+            color: white;
+            text-align: center;
+        }
+        .link-container {
+            padding: 30px;
+            background-color: #34495e; /* Slightly lighter container */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between buttons */
+            margin-top: 20px;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            min-width: 200px;
+        }
+        /* Existing styles */
+        .nav-button.calc { background-color: #3498db; /* Blue */ }
+        .nav-button.calc:hover { background-color: #2980b9; }
+
+        .nav-button.casino { background-color: #2ecc71; /* Green */ }
+        .nav-button.casino:hover { background-color: #27ae60; }
+        
+        .nav-button.receipt { background-color: #e67e22; /* Orange */ }
+        .nav-button.receipt:hover { background-color: #d35400; }
+
+        /* Style for the Pong button */
+        .nav-button.pong { background-color: #9b59b6; /* Purple */ }
+        .nav-button.pong:hover { background-color: #8e44ad; }
+
+        /* Style for the FlappyBird button (NEW COLOR) */
+        .nav-button.FlappyBird { background-color: #e74c3c; /* Red */ }
+        .nav-button.FlappyBird:hover { background-color: #c0392b; }
+
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <h1>Welcome to the Navigation Page</h1>
+        <p>Select which project you would like to view:</p>
+        
+        <div class="button-group">
+            <!-- Link to the Calculator Project -->
+            <a href="Math.html" class="nav-button calc">
+                Calculator Button
+            </a>
+
+            <!-- Link to the Casino Project -->
+            <a href="casino.html" class="nav-button casino">
+                Casino Button
+            </a>
+
+            <!-- Link to the Receipt Project -->
+            <a href="receipt.html" class="nav-button receipt">
+                Receipt Button
+            </a>
+
+             <!-- Link to the Pong Project (New Button) -->
+             <a href="pong.html" class="nav-button pong">
+                Pong Button
+            </a>
+
+            <!-- Link to the FlappyBird Project -->
+            <a href="FlappyBird.html" class="nav-button FlappyBird">
+                FlappyBird Button
+            </a>
+        </div>
+    </div>
+</body>
+</html>
